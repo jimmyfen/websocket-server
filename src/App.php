@@ -83,4 +83,3 @@ define('WEBSOCKET_CONF_PATH', WEBSOCKET_PATH . '/conf');
 // websocket log path
 define('WEBSOCKET_LOG_PATH',  WEBSOCKET_PATH . '/logs');
 
-require_once './vendor/autoload.php';
