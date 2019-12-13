@@ -1,0 +1,18 @@
+{
+    "name": "jimmyfen/websocket-server",
+    "description": "Based on swoole websocket server",
+    "autoload": {
+        "psr-4": {"Websocket\\": "src/"}
+    },
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "authors": [
+        {
+            "name": "fzhang",
+            "email": "fengzhang@fzhang.cn"
+        }
+    ]
+}
