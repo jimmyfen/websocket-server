@@ -10,10 +10,10 @@ Abstract class AbstractBase
 
     public static function getInstance(...$args)
     {
-        if (!Static::$instance) {
-            Static::$instance = new Static(...$args);
+        if (!self::$instance) {
+            self::$instance = new self(...$args);
         }
 
-        return Static::$instance;
+        return self::$instance;
     }
 }
