@@ -35,11 +35,11 @@ class App
     /**
      * run
      *
-     * @param array $config
      * @param array $callable
+     * @param array $config
      * @return App
      */
-    public static function run(array $config = [], array $callable = []) : App
+    public static function run(array $callable = [], array $config = []) : App
     {
         $instance = self::getInstance();
 
@@ -85,3 +85,4 @@ define('WEBSOCKET_CONF_PATH', WEBSOCKET_PATH . '/conf');
 // websocket log path
 define('WEBSOCKET_LOG_PATH',  WEBSOCKET_PATH . '/logs');
 
+!\is_dir(WEBSOCKET_LOG_PATH) && @mkdir(WEBSOCKET_LOG_PATH, 0777, true);
