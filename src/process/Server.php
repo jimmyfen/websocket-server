@@ -1,11 +1,12 @@
 <?php
 namespace Websocket\process;
 
-use Websocket\lib\Base;
 use Websocket\lib\Config;
 
-class Server extends Base
+class Server
 {
+    use Websocket\lib\Base;
+
     protected $server;
     protected $config;
     protected $callable = [];  // bind listen event

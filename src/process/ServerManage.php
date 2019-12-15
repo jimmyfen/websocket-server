@@ -1,12 +1,13 @@
 <?php
 namespace Websocket\process;
 
-use Websocket\lib\Base;
 use Websocket\lib\Config;
 use Websocket\lib\Command;
 
-class ServerManage extends Base
+class ServerManage
 {
+    use Websocket\lib\Base;
+
     protected $server;
 
     public function loadConf(array $conf = [])

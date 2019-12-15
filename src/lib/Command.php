@@ -3,8 +3,10 @@ namespace Websocket\lib;
 
 use Websocket\process\Server;
 
-class Command extends Base
+class Command
 {
+    use Base;
+
     /**
      * run server
      *

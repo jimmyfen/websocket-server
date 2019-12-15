@@ -1,11 +1,12 @@
 <?php
 namespace Websocket;
 
-use Websocket\lib\Base;
 use Websocket\process\ServerManage;
 
-class App extends Base
+class App
 {
+    use Websocket\lib\Base;
+
     protected $host;
     protected $port;
 
@@ -39,7 +40,7 @@ class App extends Base
      */
     public static function run(array $config = [], array $callable = []) : App
     {
-        $instance = Static::getInstance();
+        $instance = self::getInstance();
 
         !empty($conf) && $instance->loadConf($config);
 

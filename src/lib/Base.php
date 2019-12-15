@@ -1,14 +1,16 @@
 <?php 
-namespace Websocket;
+namespace Websocket\lib;
 
-class Base extends AbstractBase
+trait Base
 {
+    private static $instance;
+    
     public static function getInstance(...$args)
     {
-        if (!self::$instance) {
-            self::$instance = new self(...$args);
+        if (!Static::$instance) {
+            Static::$instance = new Static(...$args);
         }
 
-        return self::$instance;
+        return Static::$instance;
     }
 }
