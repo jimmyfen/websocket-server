@@ -1,6 +1,6 @@
 # websocket-server
 websocket server based on swoole
-### 使用此插件可以减少处理websocket层面的代码，更加专业业务层面的代码
+### 使用此插件可以减少处理websocket层面的代码，更加专注业务层面的代码
 
 
 ## 
