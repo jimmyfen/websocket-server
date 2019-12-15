@@ -3,10 +3,11 @@ namespace Websocket\process;
 
 use Websocket\lib\Config;
 use Websocket\lib\Command;
+use Websocket\lib\Base;
 
 class ServerManage
 {
-    use Websocket\lib\Base;
+    use Base;
 
     protected $server;
 

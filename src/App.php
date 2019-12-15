@@ -2,10 +2,11 @@
 namespace Websocket;
 
 use Websocket\process\ServerManage;
+use Websocket\lib\Base;
 
 class App
 {
-    use Websocket\lib\Base;
+    use Base;
 
     protected $host;
     protected $port;
