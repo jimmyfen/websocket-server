@@ -4,7 +4,7 @@ namespace Websocket\lib;
 /**
  * config
  */
-class Config extends AbstractBase
+class Config extends Base
 {
     protected $config;
 

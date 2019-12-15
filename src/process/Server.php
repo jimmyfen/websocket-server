@@ -1,10 +1,10 @@
 <?php
 namespace Websocket\process;
 
-use Websocket\lib\AbstractBase;
+use Websocket\lib\Base;
 use Websocket\lib\Config;
 
-class Server extends AbstractBase
+class Server extends Base
 {
     protected $server;
     protected $config;

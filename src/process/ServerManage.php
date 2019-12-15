@@ -1,11 +1,11 @@
 <?php
 namespace Websocket\process;
 
-use Websocket\lib\AbstractBase;
+use Websocket\lib\Base;
 use Websocket\lib\Config;
 use Websocket\lib\Command;
 
-class ServerManage extends AbstractBase
+class ServerManage extends Base
 {
     protected $server;
 

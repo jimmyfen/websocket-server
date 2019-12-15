@@ -3,7 +3,7 @@ namespace Websocket\lib;
 
 use Websocket\process\Server;
 
-class Command extends AbstractBase
+class Command extends Base
 {
     /**
      * run server
