@@ -43,7 +43,7 @@ class App
     {
         $instance = self::getInstance();
 
-        !empty($conf) && $instance->loadConf($config);
+        $instance->loadConf($config);
 
         $instance->bind($callable);
         $instance->exec();
@@ -79,7 +79,7 @@ class App
 }
 
 // websocket server root path
-define('WEBSOCKET_PATH',      realpath(getcwd()));
+define('WEBSOCKET_PATH',      realpath(__DIR__));
 // websocket server config path
 define('WEBSOCKET_CONF_PATH', WEBSOCKET_PATH . '/conf');
 // websocket log path

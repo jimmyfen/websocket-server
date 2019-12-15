@@ -32,7 +32,7 @@ class Command
             case 'help':
             case 'h':
             default:
-                showHelp();
+                $this->showHelp();
                 break;
         }
     }
