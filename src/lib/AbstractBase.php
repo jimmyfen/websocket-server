@@ -3,7 +3,7 @@ namespace Websocket\lib;
 
 Abstract class AbstractBase
 {
-    public $instance;
+    public static $instance;
 
     private function __construct(...$args)
     {}
