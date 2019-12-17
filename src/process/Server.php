@@ -69,7 +69,7 @@ class Server
      *
      * @return Server
      */
-    public function getServer() : swoole_websocket_server
+    public function getServer()
     {
         return $this->server;
     }

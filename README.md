@@ -14,7 +14,7 @@ websocket server based on swoole
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`composer`
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;2. 安装
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`composer require jimmyfen/websocket-server ~1.0.0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`composer require jimmyfen/websocket-server ~1.0.1`
 
 ## **二、配置**
 ```PHP
