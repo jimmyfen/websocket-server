@@ -3,6 +3,7 @@ namespace Websocket\process;
 
 use Websocket\lib\Config;
 use Websocket\lib\Base;
+use \swoole_websocket_server;
 
 class Server
 {
@@ -34,7 +35,7 @@ class Server
             throw new Exception('please set listen host or port first!');
         }
 
-        $this->server = new \swoole_websocket_server($config['HOST'], $config['PORT']);
+        $this->server = new swoole_websocket_server($config['HOST'], $config['PORT']);
         isset($options['d']) && $config['SETTING']['daemonize'] = 1;
         $this->server->set($config['SETTING']);
 
@@ -68,7 +69,7 @@ class Server
      *
      * @return Server
      */
-    public function getServer() : Server
+    public function getServer() : swoole_websocket_server
     {
         return $this->server;
     }
